@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Trabajando con eventos</title>
+    <link rel="stylesheet" href="estiloFRAMEWORKJS.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.2.min.js"></script>
+    <script src="color.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#show").click(function () {
+                $("#Text").toggle();
+            });
+            $("#show1").click(function () {
+                $("#Manufacturación").toggle();
+            });
+        });
+    </script>
+
+</head>
+
+<body>
+    <header class="header">
+
+        <div class="container">
+            <div class="logo">
+                <h1>Circuitos Redstone</h1>
+            </div>
+            <nav id="menu">
+
+                <ul>
+
+                    <li><a href="../index.html">inicio</a> </li>
+
+                </ul>
+
+            </nav>
+
+        </div>
+
+    </header>
+    <div class="capa"></div>
+
+    <div class="secciones">
+        <article>
+            <img src="Bloque_de_redstone.webp">
+            <br>
+            <p>
+                <button id="show">Ocultar</button>
+            </p>
+
+            <h1 id="Text1">Bloque de redstone</h1>
+            <p id="Text">El Bloque de redstone es un bloques caracterizado por pasar energía infinita, y aparte de que
+                su uso es
+                igual que el de la antorcha de redstone, sólo que está es un bloque. Fue incorporado en la 1.5 (13w01a)
+                de Minecraft.</p>
+            <br>
+
+        </article>
+        <article>
+            <img src="Redstone.png" alt="">
+            <p>
+                <button id="show1">Ocultar</button>
+            </p>
+            <h1>Manufacturación</h1>
+            <p id="Manufacturación">El bloque de redstone se puede elaborar con 9 polvos de redstone.
+                De la misma forma, se puede usar el
+                bloque para obtener los 9 polvos de redstone que lo conforman.</p>
+        </article>
+    </div>
+    
+</body>
+
+</html>

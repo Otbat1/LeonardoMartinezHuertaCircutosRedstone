@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Montserrat+Alternates|Poppins&display=swap');
+* {
+  margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+  font-family: 'Montserrat Alternates', sans-serif;
+}
+ 
+body {
+	background: url(https://www.xtrafondos.com/wallpapers/velero-minecraft-3414.jpg);
+	background-size: 100%;
+	background-repeat: repeat;
+	background-attachment: fixed;
+}
+
+.capa {
+	position: fixed;
+	width: 100%;
+	height: 100vh;
+	background: rgba(0, 0, 0, 0.6);
+	z-index: -1;
+	top: 0;
+	left: 0;
+}
+
+/*Estilos para el encabezado*/
+.header {
+	width: 100%;
+	height: 100px;
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+.container {
+	width: 100%;
+	max-width: 1200px;
+	margin: auto;
+}
+.logo {
+	float: left;
+	line-height: 100px;
+}
+.logo h1 {
+	color: #fff;
+	font-weight: 400;
+	font-size: 22px;
+	margin-left: 10px;
+}
+  #menu ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  #menu ul li{
+    float: right;
+    line-height: 100px;
+  }
+  
+  #menu a{
+    display: inline-block;
+    padding: 15px;
+    line-height: normal;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    transition: all 0.3s ease;
+    border-bottom: 2px solid transparent;
+    font-size: 15px;
+    margin-right: 20px;
+  }
+
+  #menu a:hover {
+    border-bottom: 2px solid #c7c7c7;
+    padding-bottom: 5px;
+  }
+  .active{
+  background: #1c1c1c;
+  
+  }
+  .secciones{
+    position: absolute;
+    right: 300px;
+    top: 50px;
+    width: 50%;
+    color: #fff;
+    text-align: center
+
+  }
+
+  button{ padding: 3px;
+    background: #1c1c1c;
+    color: white;
+
+  }
+
+
+  .secciones article {
+    padding: 30px;
+  }

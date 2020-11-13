@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Formulario animado</title>
+  <link rel="stylesheet" href="estiloFormulario.css">
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="color.js"></script>
+  <script src="Hora.js">	</script>
+  <script type="text/javascript">
+    function enviado() {
+        alert("Enviado")
+    }
+</script>
+  <script>
+    document.write('La fecha: ' + retornarFecha());
+    document.write('<br>');
+    document.write('La hora es: ' + retornarHora());
+  </script>
+</head>
+
+<body>
+
+  <header class="header">
+
+    <div class="container">
+
+      <nav id="menu">
+
+        <ul>
+
+          <li><a href="../index.html">inicio</a> </li>
+        
+        </ul>
+
+      </nav>
+    </div>
+
+  </header>
+  <div class="capa"></div>
+  <form action="" class="formulario">
+    <h1 class="formulario__titulo">Contáctenos</h1>
+    <input type="text" class="formulario__input">
+    <label for="" class="formulario__label">Nombres</label>
+    <input type="text" class="formulario__input">
+    <label for="" class="formulario__label">Correo</label>
+    <input type="text" class="formulario__input">
+    <label for="" class="formulario__label">Teléfono</label>
+    <input type="text" class="formulario__input">
+    <label for="" class="formulario__label">Mensaje</label>
+    <input type="submit" class="formulario__submit" onclick = "enviado()">
+  </form>
+  <script>
+    var inputs = document.getElementsByClassName('formulario__input');
+    for (var i = 0; i < inputs.length; i++) {
+      inputs[i].addEventListener('keyup', function () {
+        if (this.value.length >= 1) {
+          this.nextElementSibling.classList.add('fijar');
+        } else {
+          this.nextElementSibling.classList.remove('fijar');
+        }
+      });
+    }</script>
+</body>
+
+</html>
